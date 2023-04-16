@@ -1,0 +1,41 @@
+{
+  "name": "cytests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open",
+    "cypress:run:loginModule": "npx cypress run --browser chrome **--env allure=true --reporter mocha-allure-reporter",
+    "report:login:allure": "allure generate allure-results --clean -o allure-report",
+    "test-loginModule:allure": "npm run cypress:run:loginModule && npm run report:login:allure"
+  },
+  "author": "Nina Strokach",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.32.3",
+    "@shelex/cypress-allure-plugin": "^2.38.3",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "allure-commandline": "^2.21.0",
+    "allure-playwright": "^2.1.0",
+    "cypress": "^12.9.0",
+    "cypress-file-upload": "^5.0.8",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "2.8.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "allureReport": {
+    "resultsDir": "allure-results"
+  }
+}

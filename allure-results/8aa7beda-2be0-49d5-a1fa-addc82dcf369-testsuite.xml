@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1681657349692' stop='1681657368608'>
+    <name>Practice Form Overview Page</name>
+    <title>Practice Form Overview Page</title>
+    <test-cases>
+        <test-case start='1681657349695' status='passed' stop='1681657368444'>
+            <name>Should check maim elements on the page</name>
+            <title>Should check maim elements on the page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
